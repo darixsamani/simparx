@@ -44,8 +44,5 @@ import simpar
 
 ### English
 
-We make a paragraph recognition based on a morphological operation which is an analytical 
-method which is unstable when the structure of the image is complex in the rest of our work we will
-start from the images and their masks lead to a modeling of artificial intelligence 
-to generate the image paragraph recognition masks, thus we will better handle the structure of complex images
+We use a morphological operation for paragraph recognition. This analytical method becomes unstable with complex image structures. To handle complex structures, we'll use masks to model artificial intelligence for image paragraph recognition.
 
