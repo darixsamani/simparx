@@ -1,1 +1,0 @@
-from simpar.simpar import Simpar
