@@ -21,7 +21,7 @@ class Simpar:
 
     def __init__(self, path_image):
         self.path_image = Path(path_image)
-        print("ath image : {path_image} {sefl.path_image}")
+        print(f"path image : {path_image} {self.path_image}")
         if not self.path_image.exists:
             raise PathDoNotExiste
         self.image = io.imread(self.path_image)
@@ -125,7 +125,7 @@ class Simpar:
 
         ax.set_axis_off()
         plt.tight_layout()
-        plt.savefig(self.image_recognitive)
+        # plt.savefig(self.image_recognitive)
         self.image_reco = fig
         
     
