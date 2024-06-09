@@ -5,7 +5,7 @@ import matplotlib.patches as mpatches
 import numpy as np
 import skimage
 from pathlib import Path
-from simpar_cli.exception import PathDoNotExiste
+from .exception import PathDoNotExiste
 import matplotlib.patches as mpatches
 import matplotlib.pyplot as plt
 from skimage import data
