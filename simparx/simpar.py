@@ -125,7 +125,7 @@ class Simpar:
 
         ax.set_axis_off()
         plt.tight_layout()
-        # plt.savefig(self.image_recognitive)
+        plt.savefig("example.png")
         self.image_reco = fig
         
     
