@@ -39,9 +39,9 @@ jobs:
       # run: |
         # pytest test/*
     - name: Build with poetry
-        run: |
+      run: |
           poetry build
     - name: Publish with poetry
-        run: |
+      run: |
           poetry config pypi-token.pypi ${{ token }}
           poetry publish
