@@ -19,8 +19,9 @@ from skimage.io import imsave
 
 class Simpar:
 
-    def __init__(self, path_image):
+    def __init__(self, path_image: str, name_image: str = "example"):
         self.path_image = Path(path_image)
+        self.name_image = name_image
         print(f"path image : {path_image} {self.path_image}")
         if not self.path_image.exists:
             raise PathDoNotExiste
@@ -125,8 +126,7 @@ class Simpar:
 
         ax.set_axis_off()
         plt.tight_layout()
-        plt.savefig("example.png")
-        self.image_reco = fig
+        plt.savefig(f"{self.name_image}.{self.path_image.name.split(".")[-1]}")
         
     
     def start(self):
@@ -146,10 +146,6 @@ class Simpar:
         close =  self.morphology_operation_close(dilate)
 
         self.find_block_paragraphe_and_draw(close)
-
-    def save_image(self, name):
-
-        imsave(f"{name}.png", self.image_reco)
 
 
 
