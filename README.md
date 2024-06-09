@@ -20,12 +20,11 @@ pip install simpar
 
 ```python
 
-import simpar
+from simparx import Simpar
 
 
- simpar_instance = Simpar("./img/simple_a20.jpg")
+ simpar_instance = Simpar("./img/simple_a20.jpg", "example_recognition")
  simpar_instance.start()
- simpar_instance.save_image("./img/reco")
 
 ```
 
