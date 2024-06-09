@@ -126,7 +126,7 @@ class Simpar:
 
         ax.set_axis_off()
         plt.tight_layout()
-        plt.savefig(f"{self.name_image}.{self.path_image.name.split(".")[-1]}")
+        plt.savefig(f"{self.name_image}.{self.path_image.name.split('.')[-1]}")
         
     
     def start(self):
