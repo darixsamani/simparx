@@ -1,1 +1,1 @@
-from simpar import Simpar
+from .simpar import Simpar
